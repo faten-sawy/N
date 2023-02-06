@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*  */
+
+
+/* form {
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  max-width: 400px;
+  background: #fff;
+} */
+  .form-control {
+    display: block;
+    height: 50px;
+    margin-right: 0.5rem;
+    text-align: center;
+    font-size: 1.25rem;
+    min-width: 0;
+    border:1px solid gray;
+    border-radius:4px
+
+   
+  }
+  .form-control:focus {
+    border:1px solid blue
+  }
+
+/*  */
+
+#title,
+#bp-wrapper { 
+  text-align: center;
+  margin-bottom: 10px;
+}
+:root {
+  --swiper-theme-color: green !important;
+  --swiper-pagination-bullet-inactive-color: gray !important
+}
+.swiper-pagination > .swiper-pagination-bullet {
+  opacity: 1;
+
+ width:30px;
+ height:30px
+}
+
+
+.swiper-pagination > .swiper-pagination-bullet::after{
+  content: "";
+  border-radius: 50% !important;
+  width:40px !important;
+  height: 40px !important;
+ /*  background-color:blue; */
+  border:2px solid green !important;
+  display: inline-block;
+    position: relative;
+    top: -4px;
+    left: -5px;
+
+
+}
+
+
+
+.swiper-button-prev , .swiper-button-next{
+  display:none !important
+}
+
+
+
+#bp-640,
+#bp-768 {
+  display: none;
+}
+
+@media screen and (min-width: 640px) {
+ 
+
+  #bp-480,
+  #bp-768 {
+    display: none !important;
+  }
+
+  #bp-640 {
+    display: inline !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+
+  #bp-480,
+  #bp-640 {
+    display: none !important;
+  }
+
+  #bp-768 {
+    display: inline !important;
+  }
+}
+
+.swiper-pagination {
+  bottom: 0;
+  padding-bottom: 10px;
+}
+
+.swiper-wrapper {
+  padding-inline-start: 0;
+}
+
+#thumbs.swiper-container {
+  margin-bottom: 20px;
+}
+
+#thumbs .swiper-slide {
+  cursor: pointer;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
